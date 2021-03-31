@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
 class CustomFlexField extends StatefulWidget {
-  final labelText;
+  final text;
+  final value;
 
-  CustomFlexField(this.labelText);
+  CustomFlexField(this.text, this.value);
 
   @override
-  _CustomFlexFieldState createState() => _CustomFlexFieldState(labelText);
+  _CustomFlexFieldState createState() => _CustomFlexFieldState(text, value);
 }
 
 class _CustomFlexFieldState extends State<CustomFlexField> {
-  String labelText;
+  String text;
+  String value;
 
-  _CustomFlexFieldState(this.labelText);
+  _CustomFlexFieldState(this.text, this.value);
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +22,10 @@ class _CustomFlexFieldState extends State<CustomFlexField> {
         child: Padding(
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: TextFormField(
+        initialValue: value,
         decoration: InputDecoration(
             floatingLabelBehavior: FloatingLabelBehavior.auto,
-            labelText: labelText,
+            labelText: text,
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(10)))),
       ),

@@ -1,176 +1,201 @@
 class NivelModel {
-  String id;
-  String idNivel;
-  String idCurso;
-  String permiteMatriculaAutomatica;
+  String sId;
+  String idnivel;
+  String idcurso;
+  String permitematriculaautomatica;
   String iniciante;
   String descricao;
-  String labelColor;
+  String labelcolor;
   String valor;
   String status;
   String nivel;
   String livro;
-  String livroEdicao;
-  String livroEditora;
-  String proximoNivel;
-  String idadeInicial;
-  String idadeFinal;
-  String idadeIndicativa;
+  String livroedicao;
+  String livroeditora;
+  String proximonivel;
+  String idadeinicial;
+  String idadefinal;
+  String idadeindicativa;
   String ordem;
-  String dataNascimentoInicial;
-  String dataNascimentoFinal;
-  String idLabelNotas;
-  String nivelEquivalente;
-  String cargaHoraria;
-  String geraCertificado;
-  String nivelEquivalente2;
-  String nivelEquivalente3;
-  String nivelEquivalente4;
+  String datanascimentoinicial;
+  String datanascimentofinal;
+  String idlabelnotas;
+  String nivelequivalente;
+  String cargahoraria;
+  String geracertificado;
+  String nivelequivalente2;
+  String nivelequivalente3;
+  String nivelequivalente4;
   String ano;
   String semestre;
-  String idLabelNotas2;
-  String rangeIdadeInicial;
-  String rangeIdadeFinal;
-  String reprovaPorNota;
-  String reprovaPorFalta;
-  String dTINC;
-  String dTALT;
-  String usuarioINC;
-  String usuarioALT;
+  String idlabelnotas2;
+  String rangeidadeinicial;
+  String rangeidadefinal;
+  String reprovapornota;
+  String reprovaporfalta;
+  String datainc;
+  String dataalt;
+  String usuarioinc;
+  String usuarioalt;
   String isbn;
-  String fontColor;
-  String onlinePresencial;
+  String fontcolor;
+  String onlinepresencial;
 
   NivelModel(
-      {this.id,
-      this.idNivel,
-      this.idCurso,
-      this.permiteMatriculaAutomatica,
+      {this.sId,
+      this.idnivel,
+      this.idcurso,
+      this.permitematriculaautomatica,
       this.iniciante,
       this.descricao,
-      this.labelColor,
+      this.labelcolor,
       this.valor,
       this.status,
       this.nivel,
       this.livro,
-      this.livroEdicao,
-      this.livroEditora,
-      this.proximoNivel,
-      this.idadeInicial,
-      this.idadeFinal,
-      this.idadeIndicativa,
+      this.livroedicao,
+      this.livroeditora,
+      this.proximonivel,
+      this.idadeinicial,
+      this.idadefinal,
+      this.idadeindicativa,
       this.ordem,
-      this.dataNascimentoInicial,
-      this.dataNascimentoFinal,
-      this.idLabelNotas,
-      this.nivelEquivalente,
-      this.cargaHoraria,
-      this.geraCertificado,
-      this.nivelEquivalente2,
-      this.nivelEquivalente3,
-      this.nivelEquivalente4,
+      this.datanascimentoinicial,
+      this.datanascimentofinal,
+      this.idlabelnotas,
+      this.nivelequivalente,
+      this.cargahoraria,
+      this.geracertificado,
+      this.nivelequivalente2,
+      this.nivelequivalente3,
+      this.nivelequivalente4,
       this.ano,
       this.semestre,
-      this.idLabelNotas2,
-      this.rangeIdadeInicial,
-      this.rangeIdadeFinal,
-      this.reprovaPorNota,
-      this.reprovaPorFalta,
-      this.dTINC,
-      this.dTALT,
-      this.usuarioINC,
-      this.usuarioALT,
+      this.idlabelnotas2,
+      this.rangeidadeinicial,
+      this.rangeidadefinal,
+      this.reprovapornota,
+      this.reprovaporfalta,
+      this.datainc,
+      this.dataalt,
+      this.usuarioinc,
+      this.usuarioalt,
       this.isbn,
-      this.fontColor,
-      this.onlinePresencial});
+      this.fontcolor,
+      this.onlinepresencial});
 
   NivelModel.fromJson(Map<String, dynamic> json) {
-    id = json['_id'];
-    idNivel = json['id_nivel'];
-    idCurso = json['id_curso'];
-    permiteMatriculaAutomatica = json['permite_matricula_automatica'];
-    iniciante = json['INICIANTE'];
+    sId = json['_id'];
+    idnivel = json['idnivel'];
+    idcurso = json['idcurso'];
+    permitematriculaautomatica = json['permitematriculaautomatica'];
+    iniciante = json['iniciante'];
     descricao = json['descricao'];
-    labelColor = json['label_color'];
+    labelcolor = json['labelcolor'];
     valor = json['valor'];
     status = json['status'];
     nivel = json['nivel'];
     livro = json['livro'];
-    livroEdicao = json['livro_edicao'];
-    livroEditora = json['livro_editora'];
-    proximoNivel = json['proximo_nivel'];
-    idadeInicial = json['idade_inicial'];
-    idadeFinal = json['idade_final'];
-    idadeIndicativa = json['idade_indicativa'];
+    livroedicao = json['livroedicao'];
+    livroeditora = json['livroeditora'];
+    proximonivel = json['proximonivel'];
+    idadeinicial = json['idadeinicial'];
+    idadefinal = json['idadefinal'];
+    idadeindicativa = json['idadeindicativa'];
     ordem = json['ordem'];
-    dataNascimentoInicial = json['data_nascimento_inicial'];
-    dataNascimentoFinal = json['data_nascimento_final'];
-    idLabelNotas = json['id_label_notas'];
-    nivelEquivalente = json['nivel_equivalente'];
-    cargaHoraria = json['CargaHoraria'];
-    geraCertificado = json['GeraCertificado'];
-    nivelEquivalente2 = json['nivel_equivalente2'];
-    nivelEquivalente3 = json['nivel_equivalente3'];
-    nivelEquivalente4 = json['nivel_equivalente4'];
+    datanascimentoinicial = json['datanascimentoinicial'];
+    datanascimentofinal = json['datanascimentofinal'];
+    idlabelnotas = json['idlabelnotas'];
+    nivelequivalente = json['nivelequivalente'];
+    cargahoraria = json['cargahoraria'];
+    geracertificado = json['geracertificado'];
+    nivelequivalente2 = json['nivelequivalente2'];
+    nivelequivalente3 = json['nivelequivalente3'];
+    nivelequivalente4 = json['nivelequivalente4'];
     ano = json['ano'];
     semestre = json['semestre'];
-    idLabelNotas2 = json['id_label_notas2'];
-    rangeIdadeInicial = json['range_idade_inicial'];
-    rangeIdadeFinal = json['range_idade_final'];
-    reprovaPorNota = json['ReprovaPorNota'];
-    reprovaPorFalta = json['ReprovaPorFalta'];
-    dTINC = json['DT_INC'];
-    dTALT = json['DT_ALT'];
-    usuarioINC = json['USUARIO_INC'];
-    usuarioALT = json['USUARIO_ALT'];
-    isbn = json['ISBN'];
-    fontColor = json['font_color'];
-    onlinePresencial = json['ONLINE_PRESENCIAL'];
+    idlabelnotas2 = json['idlabelnotas2'];
+    rangeidadeinicial = json['rangeidadeinicial'];
+    rangeidadefinal = json['rangeidadefinal'];
+    reprovapornota = json['reprovapornota'];
+    reprovaporfalta = json['reprovaporfalta'];
+    datainc = json['datainc'];
+    dataalt = json['dataalt'];
+    usuarioinc = json['usuarioinc'];
+    usuarioalt = json['usuarioalt'];
+    isbn = json['isbn'];
+    fontcolor = json['fontcolor'];
+    onlinepresencial = json['onlinepresencial'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['_id'] = this.id;
-    data['id_nivel'] = this.idNivel;
-    data['id_curso'] = this.idCurso;
-    data['permite_matricula_automatica'] = this.permiteMatriculaAutomatica;
-    data['INICIANTE'] = this.iniciante;
+    data['_id'] = this.sId;
+    data['idnivel'] = this.idnivel;
+    data['idcurso'] = this.idcurso;
+    data['permitematriculaautomatica'] = this.permitematriculaautomatica;
+    data['iniciante'] = this.iniciante;
     data['descricao'] = this.descricao;
-    data['label_color'] = this.labelColor;
+    data['labelcolor'] = this.labelcolor;
     data['valor'] = this.valor;
     data['status'] = this.status;
     data['nivel'] = this.nivel;
     data['livro'] = this.livro;
-    data['livro_edicao'] = this.livroEdicao;
-    data['livro_editora'] = this.livroEditora;
-    data['proximo_nivel'] = this.proximoNivel;
-    data['idade_inicial'] = this.idadeInicial;
-    data['idade_final'] = this.idadeFinal;
-    data['idade_indicativa'] = this.idadeIndicativa;
+    data['livroedicao'] = this.livroedicao;
+    data['livroeditora'] = this.livroeditora;
+    data['proximonivel'] = this.proximonivel;
+    data['idadeinicial'] = this.idadeinicial;
+    data['idadefinal'] = this.idadefinal;
+    data['idadeindicativa'] = this.idadeindicativa;
     data['ordem'] = this.ordem;
-    data['data_nascimento_inicial'] = this.dataNascimentoInicial;
-    data['data_nascimento_final'] = this.dataNascimentoFinal;
-    data['id_label_notas'] = this.idLabelNotas;
-    data['nivel_equivalente'] = this.nivelEquivalente;
-    data['CargaHoraria'] = this.cargaHoraria;
-    data['GeraCertificado'] = this.geraCertificado;
-    data['nivel_equivalente2'] = this.nivelEquivalente2;
-    data['nivel_equivalente3'] = this.nivelEquivalente3;
-    data['nivel_equivalente4'] = this.nivelEquivalente4;
+    data['datanascimentoinicial'] = this.datanascimentoinicial;
+    data['datanascimentofinal'] = this.datanascimentofinal;
+    data['idlabelnotas'] = this.idlabelnotas;
+    data['nivelequivalente'] = this.nivelequivalente;
+    data['cargahoraria'] = this.cargahoraria;
+    data['geracertificado'] = this.geracertificado;
+    data['nivelequivalente2'] = this.nivelequivalente2;
+    data['nivelequivalente3'] = this.nivelequivalente3;
+    data['nivelequivalente4'] = this.nivelequivalente4;
     data['ano'] = this.ano;
     data['semestre'] = this.semestre;
-    data['id_label_notas2'] = this.idLabelNotas2;
-    data['range_idade_inicial'] = this.rangeIdadeInicial;
-    data['range_idade_final'] = this.rangeIdadeFinal;
-    data['ReprovaPorNota'] = this.reprovaPorNota;
-    data['ReprovaPorFalta'] = this.reprovaPorFalta;
-    data['DT_INC'] = this.dTINC;
-    data['DT_ALT'] = this.dTALT;
-    data['USUARIO_INC'] = this.usuarioINC;
-    data['USUARIO_ALT'] = this.usuarioALT;
-    data['ISBN'] = this.isbn;
-    data['font_color'] = this.fontColor;
-    data['ONLINE_PRESENCIAL'] = this.onlinePresencial;
+    data['idlabelnotas2'] = this.idlabelnotas2;
+    data['rangeidadeinicial'] = this.rangeidadeinicial;
+    data['rangeidadefinal'] = this.rangeidadefinal;
+    data['reprovapornota'] = this.reprovapornota;
+    data['reprovaporfalta'] = this.reprovaporfalta;
+    data['datainc'] = this.datainc;
+    data['dataalt'] = this.dataalt;
+    data['usuarioinc'] = this.usuarioinc;
+    data['usuarioalt'] = this.usuarioalt;
+    data['isbn'] = this.isbn;
+    data['fontcolor'] = this.fontcolor;
+    data['onlinepresencial'] = this.onlinepresencial;
+    return data;
+  }
+
+  Map<String, dynamic> toJsonForInsert() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['idcurso'] = this.idcurso;
+    data['iniciante'] = this.iniciante;
+    data['descricao'] = this.descricao;
+    data['labelcolor'] = this.labelcolor;
+    data['status'] = this.status;
+    data['nivel'] = this.nivel;
+    data['livro'] = this.livro;
+    data['livroedicao'] = this.livroedicao;
+    data['livroeditora'] = this.livroeditora;
+    data['idadeinicial'] = this.idadeinicial;
+    data['idadefinal'] = this.idadefinal;
+    data['idadeindicativa'] = this.idadeindicativa;
+    data['ordem'] = this.ordem;
+    data['cargahoraria'] = this.cargahoraria;
+    data['geracertificado'] = this.geracertificado;
+    data['reprovapornota'] = this.reprovapornota;
+    data['reprovaporfalta'] = this.reprovaporfalta;
+    data['isbn'] = this.isbn;
+    data['fontcolor'] = this.fontcolor;
+    data['onlinepresencial'] = this.onlinepresencial;
     return data;
   }
 }

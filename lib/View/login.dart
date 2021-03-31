@@ -1,7 +1,6 @@
 import 'package:cursoweb/Controller/user_controller.dart';
 import 'package:cursoweb/Model/user_model.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 class Login extends StatefulWidget {
   @override
